@@ -1,0 +1,121 @@
+/* styles.css */
+
+.quienesSomos{
+    color: #007BFF;
+}
+
+/* Estilo para el contenedor del título superpuesto */
+.background-container {
+    position: relative;
+}
+
+/* Estilo para la imagen de fondo */
+.background-image {
+    background-image: url('Imagenes/Imagen1.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Ajusta la altura según tus necesidades */
+}
+
+/* Estilo para el título superpuesto */
+.overlay-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+/* Estilo para el título superpuesto */
+.overlay-subtitle {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(37, 37, 37, 0.5); /* Fondo semitransparente */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card{
+    margin: 10px;
+}
+
+/* CSS personalizado */
+.floating-button {
+    position: relative;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.floating-button .btn-floating {
+    font-size: 24px;
+    color: #007BFF;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+.floating-button:hover .btn-floating {
+    transform: translateY(-40px);
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    transform: scaleY(0);
+    transition: transform 0.3s;
+}
+
+.floating-button:hover .social-icons {
+    transform: scaleY(1);
+}
+
+   /* Estilos para la separación con degradado de color celeste */
+   #acerca-de {
+    background: linear-gradient(180deg, #87CEEB, #6ea7e4);
+    color: white; /* Cambia el color de texto a blanco para mejorar la legibilidad */
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+     /* Estilos para las tarjetas */
+     .card {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    /* Aplicar la animación al acercar el mouse a la tarjeta */
+    .card:hover {
+        transform: scale(1.05);
+    }
+    
+    .fade-in {
+        animation: fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
