@@ -1,6 +1,6 @@
 /* styles.css */
 
- .title{
+.title {
     color: #007BFF;
 }
 
@@ -11,10 +11,11 @@
 
 /* Estilo para la imagen de fondo */
 .background-image {
-    background-image: url('Imagenes/Imagen1.png');
+    background-image: url('Imagenes/climatizacion.jpg');
     background-size: cover;
     background-position: center;
-    height: 50vh; /* Ajusta la altura según tus necesidades */
+    height: 50vh;
+    /* Ajusta la altura según tus necesidades */
 }
 
 /* Estilo para el título superpuesto */
@@ -23,26 +24,29 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-}
-/* Estilo para el título superpuesto */
-.overlay-subtitle {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(37, 37, 37, 0.5); /* Fondo semitransparente */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
     color: white;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
 }
 
-.card{
+/* Estilo para el título superpuesto */
+.overlay-subtitle {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(37, 37, 37, 0.5);
+    /* Fondo semitransparente */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card {
     margin: 10px;
 }
 
@@ -87,138 +91,131 @@
     transform: scaleY(1);
 }
 
-   /* Estilos para la separación con degradado de color celeste */
-   #contacto {
+/* Estilos para la separación con degradado de color celeste */
+#contacto {
     border-radius: 10px;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
-     /* Estilos para las tarjetas */
-     .card {
-        transition: transform 0.2s ease-in-out;
+/* Estilos para las tarjetas */
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Aplicar la animación al acercar el mouse a la tarjeta */
+.card:hover {
+    transform: scale(1.05);
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
 
-    /* Aplicar la animación al acercar el mouse a la tarjeta */
-    .card:hover {
-        transform: scale(1.05);
+    to {
+        opacity: 1;
     }
-    
-    .fade-in {
-        animation: fadeIn 1s;
-    }
-    
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    
-    .social-buttons {
-        display: flex;
-        justify-content: space-around;
-        margin: 20px;
-    }
+}
 
-    .social-button {
-        width: 50px;
-        height: 50px;
-        background-color: #3498db;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 20px;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
-    }
+.social-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
 
-    .social-button:hover {
-        background-color: #2980b9;
-    }
+.social-button {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
 
-    .social-button i {
-        transition: transform 0.3s ease;
-    }
+.social-button:hover {
+    background-color: #2980b9;
+}
 
-    .social-button:hover i {
-        transform: scale(1.2);
-    }
+.social-button i {
+    transition: transform 0.3s ease;
+}
 
-    .whatsapp{
-        background-color: #fff;
-    }
-    .whatsapp:hover {
-        background-color: rgb(140, 155, 165);
-    }
-    .facebook{
-        background-color:#fff;
-    }
-    .facebook:hover {
-        background-color: rgb(140, 155, 165);
-    }
-    .instagram{
-        background-color:#fff;
-    }
-    .instagram:hover {
-        background-color: rgb(140, 155, 165);
-    }
+.social-button:hover i {
+    transform: scale(1.2);
+}
 
-    .css-selector {
-        background: linear-gradient(270deg, #1fb3df, #88b9c8);
-        background-size: 400% 400%;
-        color: #fff;
-        -webkit-animation: AnimationName 13s ease infinite;
-        -moz-animation: AnimationName 13s ease infinite;
-        animation: AnimationName 13s ease infinite;
-    }
-    
-    @-webkit-keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @-moz-keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
+.whatsapp {
+    background-color: #fff;
+}
 
-    .cardQuienesSomos{
-        border:1px solid #2980b9;
-        border-radius: 10px;
-        padding: 15px;
-        margin-bottom: 10px;
-    }
- 
-    .cardQuienesSomos {
+.whatsapp:hover {
+    background-color: rgb(140, 155, 165);
+}
+
+.facebook {
+    background-color: #fff;
+}
+
+.facebook:hover {
+    background-color: rgb(140, 155, 165);
+}
+
+.instagram {
+    background-color: #fff;
+}
+
+.instagram:hover {
+    background-color: rgb(140, 155, 165);
+}
+
+.css-selector {
+    background-image: url(Imagenes/fondoContacto.jpg);
+    background-size: 100% 100%;
+    color: #000;
+    font-weight: bold;
+}
+
+.cardQuienesSomos {
+    border: 1px solid #2980b9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.cardQuienesSomos {
+    margin-top: 20px;
+}
+
+.heightCard {
+    height: 100%;
+}
+
+@media only screen and (max-width:525px) {
+    .mision {
         margin-top: 20px;
     }
 
-    .heightCard{
-        height: 100%;
-    }
+}
 
-    @media only screen and (max-width:525px) {
-        .mision{
-            margin-top:20px;
-        }
-        
-    }
+.list {
+    list-style-type: none;
+    ;
+}
 
-    .list{
-        list-style-type: none;;
-    }
+.colorCard {
+    background-color: aliceblue;
+}
 
-    .colorCard{
-        background-color:aliceblue;
-    }
+.galeria {
+    border-radius: 10px;
+}
