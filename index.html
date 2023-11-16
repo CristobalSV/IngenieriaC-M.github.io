@@ -15,8 +15,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-
-
 </head>
 
 <body>
@@ -75,13 +73,34 @@
     <section id="nuestros-servicios" class="container mt-5">
         <h2 class="display-4 fade-in ">Nuestros Servicios</h2>
         <div class="container">
-            <div class="row cardQuienesSomos">
-                <div class="col-md-4 fade-in">
-                    <div class="mb-3">
-                        <div class="card">
-                            <img src="Imagenes/climatizacion2.jpg" class="card-img-top" alt="Servicio 1">
+            <div class="row cardServicios">
+                <!-- Carrusel de Bootstrap solo con Imágenes -->
+                <div id="carouselExample" class="carousel slide col-md-4 " data-bs-ride="carousel">
+                    <div class="carousel-inner carrusel-hover">
+                        <div class="carousel-item active">
+                            <img src="Imagenes/aireacondicionado.jpg" class="d-block w-100" height="250px"
+                                alt="Servicio 1">
+                        </div>
+                        <!-- Agrega más items de carrusel según sea necesario -->
+                        <div class="carousel-item">
+                            <img src="Imagenes/aireacondicionado2.jpg" class="d-block w-100" height="250px"
+                                alt="Servicio 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/aireacondicionado3.jpg" class="d-block w-100" height="250px"
+                                alt="Servicio 2">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
                 <div class="col-md-8 fade-in">
                     <h3 class="mb-3 title">Aire Acondicionado</h3>
@@ -95,12 +114,11 @@
                         <li>Otros servicios relacionados</li>
                     </ul>
                 </div>
-
             </div>
         </div>
 
         <div class="container">
-            <div class="row cardQuienesSomos">
+            <div class="row cardServicios">
                 <div class="col-md-8 fade-in">
                     <h3 class="mb-3 title">Aire Acondicionado para Maquinaria Pesada</h3>
                     <p>Brindamos servicios de aire acondicionado para maquinaria pesada.</p>
@@ -111,24 +129,66 @@
                         <li>Compactadoras Móviles</li>
                     </ul>
                 </div>
-                <div class="col-md-4 fade-in">
-                    <div class="mb-3">
-                        <div class="card">
-                            <img src="Imagenes/climatizacion2.jpg" class="card-img-top" alt="Servicio 2">
+                <!-- Carrusel de Bootstrap solo con Imágenes -->
+                <div id="carouselExample2" class="carousel slide col-md-4 " data-bs-ride="carousel">
+                    <div class="carousel-inner carrusel-hover">
+                        <div class="carousel-item active">
+                            <img src="Imagenes/cargadorFrontal.jpg" class="d-block w-100" height="300px"
+                                alt="Servicio 1">
+                        </div>
+                        <!-- Agrega más items de carrusel según sea necesario -->
+                        <div class="carousel-item">
+                            <img src="Imagenes/cargadorFrontal2.jpg" class="d-block w-100" height="300px"
+                                alt="Servicio 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/cargadorFrontal3.jpg" class="d-block w-100" height="300px"
+                                alt="Servicio 2">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row cardQuienesSomos">
-                <div class="col-md-4 fade-in">
-                    <div class="mb-3">
-                        <div class="card">
-                            <img src="Imagenes/climatizacion2.jpg" class="card-img-top" alt="Servicio 2">
+            <div class="row cardServicios">
+                <!-- Carrusel de Bootstrap solo con Imágenes -->
+                <div id="carouselExample3" class="carousel slide col-md-4 " data-bs-ride="carousel">
+                    <div class="carousel-inner carrusel-hover">
+                        <div class="carousel-item active">
+                            <img src="Imagenes/refrigeracionComercial.jpg" class="d-block w-100" height="300px"
+                                alt="Servicio 1">
+                        </div>
+                        <!-- Agrega más items de carrusel según sea necesario -->
+                        <div class="carousel-item">
+                            <img src="Imagenes/refrigeracionComercial2.jpg" class="d-block w-100" height="300px"
+                                alt="Servicio 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagenes/refrigeracionComercial3.jpg" class="d-block w-100" height="300px"
+                                alt="Servicio 2">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
 
                 <div class="col-md-8 fade-in">
@@ -142,7 +202,6 @@
                         <li>Entre otros equipos de refrigeración comercial</li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </section>
@@ -152,50 +211,50 @@
     <!-- Seccion Quienes somos -->
     <section id="quienes-somos" class="container mt-5">
         <div class="row">
-            <div class="col-12 ">
-                <h2 class="display-4 fade-in quienesSomos">¿Quiénes Somos?</h2>
+            <div class="col-12 fade-in quienesSomos">
+                <h2 class="display-4">¿Quiénes Somos?</h2>
             </div>
         </div>
 
-        <div class="col-md-12 fade-in">
-            <h5>Somos una empresa con más de 20 años de experiencia en el campo de la climatización y refrigeración.
-                Contamos con un equipo de técnicos altamente capacitados y certificados en una amplia gama de servicios
-                que incluyen:</h5>
+        <div class="row fade-in">
+            <div class="col-md-12">
+                <h5>Somos una empresa con más de 20 años de experiencia en el campo de la climatización y refrigeración.
+                    Contamos con un equipo de técnicos altamente capacitados y certificados en una amplia gama de
+                    servicios que incluyen:</h5>
+            </div>
         </div>
 
         <div class="row">
-            <div class="container col-md-4 mb-4">
-                <div class="card cardQuienesSomos heightCard colorCard ">
+            <div class="col-md-4 mb-4">
+                <div class=" cardQuienesSomos heightCard colorCard p-4">
                     <div class="card-body">
-                        <h5 class="card-title title">Buenas Prácticas en Manejo de Refrigerante</h5>
+                        <h5 class="card-title title mb-3">Buenas Prácticas en Manejo de Refrigerante</h5>
                         <p class="card-text">Nos comprometemos a seguir buenas prácticas, incluyendo la recuperación
-                            segura de refrigerante, la
-                            destrucción segura de residuos y la trazabilidad de nuestros procesos.</p>
+                            segura de refrigerante, la destrucción segura de residuos y la trazabilidad de nuestros
+                            procesos.</p>
                     </div>
                 </div>
             </div>
-            <div class="container col-md-4 mb-4">
-                <div class="card cardQuienesSomos heightCard colorCard">
-                    <div class="card-body">
-                        <h5 class="card-title title">Código Eléctrico y Trabajos en Alturas Certificados</h5>
+            <div class="col-md-4 mb-4  ">
+                <div class="cardQuienesSomos heightCard colorCard p-4">
+                    <div class="card-body ">
+                        <h5 class="card-title title mb-3">Código Eléctrico y Trabajos en Alturas Certificados</h5>
                         <p class="card-text">Nuestro equipo está capacitado en código eléctrico y certificado para
-                            realizar trabajos en alturas,
-                            garantizando la seguridad en todas nuestras operaciones.</p>
+                            realizar trabajos en alturas, garantizando la seguridad en todas nuestras operaciones.</p>
                     </div>
                 </div>
             </div>
-            <div class="container col-md-4 mb-4">
-                <div class="card cardQuienesSomos heightCard colorCard">
+            <div class="col-md-4 mb-4">
+                <div class="cardQuienesSomos heightCard colorCard p-4">
                     <div class="card-body">
-                        <h5 class="card-title title">Incorporación en la Cámara Chilena</h5>
+                        <h5 class="card-title title mb-3">Incorporación en la Cámara Chilena</h5>
                         <p class="card-text">Estamos debidamente incorporados en la Cámara Chilena y estamos
-                            comprometidos a proporcionar soluciones
-                            de alta calidad en climatización y refrigeración.</p>
+                            comprometidos a proporcionar soluciones de alta calidad en climatización y refrigeración.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Fin de Seccion quienes-somos-->
@@ -404,7 +463,7 @@
         <h2 class="display-4 fade-in mision mb-2">Nuestros Trabajos</h2>
 
         <!-- Carrusel de Bootstrap -->
-        <div id="carouselExample" class="carousel slide " data-bs-ride="carousel">
+        <div id="carouselExample4" class="carousel slide m-5" data-bs-ride="carousel">
             <div class="carousel-inner galeria">
                 <div class="carousel-item active">
                     <img src="Imagenes/Imagen0.png" class="d-block w-100" style="height: 400px;" alt="Imagen 1">
@@ -427,13 +486,19 @@
                 <div class="carousel-item">
                     <img src="Imagenes/Imagen4.png" class="d-block w-100" style="height: 400px;" alt="Imagen 7">
                 </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/imagen5.jpeg" class="d-block w-100" style="height: 400px;" alt="Imagen 8">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/imagen6.jpeg" class="d-block w-100" style="height: 400px;" alt="Imagen 9">
+                </div>
                 <!-- Agrega más items según sea necesario -->
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
