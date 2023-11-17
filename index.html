@@ -5,24 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C&M SPA</title>
+    <link rel="shortcut icon" href="Imagenes/logo.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-8BmV3kP4/GIq/HJ8ap+J0XrF0Je3SfsjT9oYMIP+AnWdvoF0D5VrmBXO9EfAiZu3yL4N1v6n8CsE6ZB6aTfh6w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    <script src="scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 
 </head>
 
-<body>
+<body class="body">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Ingeniería y Servicios C&M SPA</a>
+            <a class="navbar-brand" href="#">
+                <img src="Imagenes/logo.jpeg" alt="Logo de Ingeniería y Servicios C&M SPA" width="40" height="40">
+                Ingeniería y Servicios C&M SPA
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,10 +48,10 @@
                         <a class="nav-link" href="#mision">Nuestra Mision</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" href="#galeria">Nuestros Trabajos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#galeria">Nuestros Trabajos</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -56,23 +61,20 @@
     <!-- Imagen de fondo con título superpuesto -->
     <div class="background-container">
         <div class="background-image"></div>
-        <div class="overlay-title">
+        <div class="overlay-title ">
             <h5>
                 Nos destacamos por escuchar y ofrecer soluciones que aseguran la completa satisfacción de nuestros
                 clientes.
             </h5>
-        </div>
-        <div class="overlay-subtitle">
-
         </div>
     </div>
 
     <!-- Comienzo de creacion de Cards -->
 
     <!-- Sección "Nuestros Servicios" con 6 cards -->
-    <section id="nuestros-servicios" class="container mt-5">
-        <h2 class="display-4 fade-in ">Nuestros Servicios</h2>
-        <div class="container">
+    <section id="nuestros-servicios" class="container mt-5 mgSection">
+        <h2 class="display-4 fade-in mb-4">Nuestros Servicios</h2>
+        <div class="container mb-5">
             <div class="row cardServicios">
                 <!-- Carrusel de Bootstrap solo con Imágenes -->
                 <div id="carouselExample" class="carousel slide col-md-4 " data-bs-ride="carousel">
@@ -117,7 +119,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container mb-5">
             <div class="row cardServicios">
                 <div class="col-md-8 fade-in">
                     <h3 class="mb-3 title">Aire Acondicionado para Maquinaria Pesada</h3>
@@ -160,7 +162,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container mb-5">
             <div class="row cardServicios">
                 <!-- Carrusel de Bootstrap solo con Imágenes -->
                 <div id="carouselExample3" class="carousel slide col-md-4 " data-bs-ride="carousel">
@@ -209,15 +211,15 @@
     <!-- Fin de creacion de Cards -->
 
     <!-- Seccion Quienes somos -->
-    <section id="quienes-somos" class="container mt-5">
+    <section id="quienes-somos" class="container mt-5 mgSection">
         <div class="row">
             <div class="col-12 fade-in quienesSomos">
                 <h2 class="display-4">¿Quiénes Somos?</h2>
             </div>
         </div>
 
-        <div class="row fade-in">
-            <div class="col-md-12">
+        <div class="row fade-in ">
+            <div class="col-md-12 mt-4 ">
                 <h5>Somos una empresa con más de 20 años de experiencia en el campo de la climatización y refrigeración.
                     Contamos con un equipo de técnicos altamente capacitados y certificados en una amplia gama de
                     servicios que incluyen:</h5>
@@ -261,10 +263,10 @@
 
     <!-- Comienzo de Mision -->
 
-    <section id="mision" class="container mt-5">
+    <section id="mision" class="container mt-5 mgSection">
         <div class="row">
             <div class="col-12">
-                <h2 class="display-4 fade-in mision">Nuestra Misión</h2>
+                <h2 class="display-4 fade-in mision mb-4">Nuestra Misión</h2>
             </div>
         </div>
         <div class="row">
@@ -437,7 +439,7 @@
                                     </h6>
                                 </div>
 
-                                <div class="col-md-12  card mt-5 cardQuienesSomos colorCard">
+                                <div class="col-md-12   mt-5 cardQuienesSomos colorCard">
                                     <strong>
                                         <h5>
                                             Estos valores fundamentales están en nuestro ADN son la guía, para no perder
@@ -459,7 +461,7 @@
     <!-- Fin Comienzo de Mision -->
 
     <!-- Sección de Carrusel de Imágenes -->
-    <section id="galeria" class="container mt-5 ">
+    <section id="galeria" class="container mt-5 mgSection">
         <h2 class="display-4 fade-in mision mb-2">Nuestros Trabajos</h2>
 
         <!-- Carrusel de Bootstrap -->
@@ -508,8 +510,8 @@
 
     <!-- Fin Carrusel Imagenes -->
 
-    <!-- Sección "Acerca de Nosotros" -->
-    <section id="contacto" class="container mt-5 css-selector p-4 ">
+    <!-- Pie de pagina -->
+    <footer id="contacto">
         <h2 class="text-center mb-3 ">
             <i class="fa fa-align-center " aria-hidden="true"></i> Contacto <svg xmlns="http://www.w3.org/2000/svg"
                 height="1em"
@@ -520,8 +522,8 @@
         </h2>
 
         <div class="row">
-            <div class="col-md-6">
-                <ul>
+            <div class="col-md-6 ">
+                <ul class="lista">
                     <li class="mb-3">
                         Correo: xxxx@xxx.com
                     </li>
@@ -531,8 +533,8 @@
                     <li class="mb-3">
                         Direccion: Santiago, Region Metropolitana.
                     </li>
-
                 </ul>
+               
             </div>
 
             <div class="col-md-6 ">
@@ -569,9 +571,33 @@
                 </div>
             </div>
         </div>
-    </section>
+        <div class="LogoTitle"> <img src="Imagenes/logo.jpeg" alt="Logo de Ingeniería y Servicios C&M SPA" width="40" height="40">
+            Ingeniería y Servicios C&M SPA</div>
+    </footer>
 
-    <!-- Fin de Sección "Acerca de Nosotros" -->
+    <!--Fin Pie de pagina -->
+
+    <!-- Botón flotante -->
+    <button id="boton-flotante"><svg xmlns="http://www.w3.org/2000/svg" height="1.2em"
+            viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+                svg {
+                    fill: #ffffff
+                }
+            </style>
+            <path
+                d="M512 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H512zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H176zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z" />
+        </svg></button>
+
+    <!-- Contenedor de redes sociales -->
+    <div id="redes-sociales">
+        <!-- Agrega tus iconos o enlaces de redes sociales aquí -->
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Twitter</a>
+        <a onclick="cotizarProducto(0)" href="#" target="_blank">Whatsapp</a>
+    </div>
+
+
 
 
 </body>
